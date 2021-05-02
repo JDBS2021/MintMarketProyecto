@@ -218,6 +218,16 @@ namespace MintMarket
             AbrirFormEnPanel(fm);
         }
 
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de cerrar sesion?", "Alerta¡¡", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                FormLogin login = new FormLogin();
+                login.Show();
+            }
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {

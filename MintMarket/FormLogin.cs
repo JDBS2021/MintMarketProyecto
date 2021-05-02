@@ -9,17 +9,20 @@ using System.Runtime.InteropServices;
 
 namespace MintMarket
 {
-    public partial class FormMantProducto : Form
+    public partial class FormLogin : Form
     {
-        public FormMantProducto()
+        public FormLogin()
         {
             InitializeComponent();
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
+
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
@@ -29,15 +32,18 @@ namespace MintMarket
             this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMenuPrincipal principal = new FormMenuPrincipal();
+            principal.Show();
+            
+        }
+
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

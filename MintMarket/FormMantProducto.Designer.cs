@@ -31,6 +31,7 @@ namespace MintMarket
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMantProducto));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.BtnCerrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@ namespace MintMarket
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.comboCategoria = new System.Windows.Forms.ComboBox();
             this.BarraTitulo.SuspendLayout();
@@ -70,6 +70,21 @@ namespace MintMarket
             this.BarraTitulo.Size = new System.Drawing.Size(673, 44);
             this.BarraTitulo.TabIndex = 3;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(629, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 44);
+            this.button2.TabIndex = 16;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
@@ -137,7 +152,6 @@ namespace MintMarket
             this.textNombre.Location = new System.Drawing.Point(157, 116);
             this.textNombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textNombre.Name = "textNombre";
-            this.textNombre.ReadOnly = true;
             this.textNombre.Size = new System.Drawing.Size(284, 23);
             this.textNombre.TabIndex = 17;
             // 
@@ -159,7 +173,6 @@ namespace MintMarket
             this.textPrecio.Location = new System.Drawing.Point(157, 145);
             this.textPrecio.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textPrecio.Name = "textPrecio";
-            this.textPrecio.ReadOnly = true;
             this.textPrecio.Size = new System.Drawing.Size(284, 23);
             this.textPrecio.TabIndex = 19;
             // 
@@ -181,7 +194,6 @@ namespace MintMarket
             this.textCosto.Location = new System.Drawing.Point(157, 174);
             this.textCosto.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textCosto.Name = "textCosto";
-            this.textCosto.ReadOnly = true;
             this.textCosto.Size = new System.Drawing.Size(284, 23);
             this.textCosto.TabIndex = 21;
             // 
@@ -203,7 +215,6 @@ namespace MintMarket
             this.textDescuento.Location = new System.Drawing.Point(157, 203);
             this.textDescuento.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textDescuento.Name = "textDescuento";
-            this.textDescuento.ReadOnly = true;
             this.textDescuento.Size = new System.Drawing.Size(284, 23);
             this.textDescuento.TabIndex = 23;
             // 
@@ -225,7 +236,6 @@ namespace MintMarket
             this.textCantidad.Location = new System.Drawing.Point(157, 232);
             this.textCantidad.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textCantidad.Name = "textCantidad";
-            this.textCantidad.ReadOnly = true;
             this.textCantidad.Size = new System.Drawing.Size(284, 23);
             this.textCantidad.TabIndex = 25;
             // 
@@ -247,7 +257,6 @@ namespace MintMarket
             this.textDescripcion.Location = new System.Drawing.Point(157, 261);
             this.textDescripcion.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.ReadOnly = true;
             this.textDescripcion.Size = new System.Drawing.Size(284, 23);
             this.textDescripcion.TabIndex = 27;
             // 
@@ -276,6 +285,7 @@ namespace MintMarket
             this.btnCancelar.TabIndex = 31;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // button1
             // 
@@ -292,21 +302,6 @@ namespace MintMarket
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(629, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 44);
-            this.button2.TabIndex = 16;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label9
             // 

@@ -45,6 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textPass = new System.Windows.Forms.TextBox();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -180,7 +182,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(216, 270);
+            this.btnGuardar.Location = new System.Drawing.Point(214, 305);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(117, 40);
@@ -196,7 +198,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(365, 270);
+            this.btnCancelar.Location = new System.Drawing.Point(363, 305);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(117, 40);
@@ -238,11 +240,34 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(29, 255);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(85, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Contraseña:";
+            // 
+            // textPass
+            // 
+            this.textPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textPass.Location = new System.Drawing.Point(136, 251);
+            this.textPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textPass.Name = "textPass";
+            this.textPass.Size = new System.Drawing.Size(284, 23);
+            this.textPass.TabIndex = 16;
+            // 
             // FormMantCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 339);
+            this.ClientSize = new System.Drawing.Size(673, 381);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textPass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtid);
@@ -289,6 +314,7 @@
         public System.Windows.Forms.TextBox txtid;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
-
+        private System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox textPass;
     }
 }
