@@ -134,7 +134,7 @@ namespace MintMarket
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(830, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(830, 194);
             this.dataGridView1.TabIndex = 6;
             // 
             // ID

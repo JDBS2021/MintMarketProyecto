@@ -15,6 +15,7 @@ namespace MintMarket
         public FormListaClientes()
         {
             InitializeComponent();
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -70,13 +71,13 @@ namespace MintMarket
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            FormPagos frm = Owner as FormPagos;
+            /*FormPagos frm = Owner as FormPagos;
 ;
 
             frm.txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             frm.txtnombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             frm.txtapellido.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            this.Close();
+            this.Close();*/
         }
 
         private void button2_Click(object sender, EventArgs e)
