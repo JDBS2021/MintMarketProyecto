@@ -228,6 +228,13 @@ namespace MintMarket
             }
         }
 
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            FormListaPedidos fm = new FormListaPedidos();
+            fm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fm);
+        }
+
         //METODO PARA HORA Y FECHA ACTUAL ----------------------------------------------------------
         private void tmFechaHora_Tick(object sender, EventArgs e)
         {
