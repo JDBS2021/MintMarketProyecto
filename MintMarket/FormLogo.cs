@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MintMarket
 {
-    public partial class Login : Form
+    public partial class FormLogo : Form
     {
-        public Login()
+        public FormLogo()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
