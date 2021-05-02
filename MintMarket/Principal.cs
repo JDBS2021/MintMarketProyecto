@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace MintMarket
 {
@@ -37,6 +38,45 @@ namespace MintMarket
             this.WindowState = FormWindowState.Normal;
             botonRestaurar.Visible = false;
             botonMaximizar.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = true;
+        }
+
+        private void btnReporteProducto_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void btnReportePedido_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void btnReportePagos_Click(object sender, EventArgs e)
+        {
+            SubmenuReportes.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
