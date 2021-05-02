@@ -34,9 +34,19 @@ namespace MintMarket
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMenuPrincipal principal = new FormMenuPrincipal();
-            principal.Show();
+            if(txtUser.Text=="admin" && textPass.Text == "****")
+            {
+                this.Hide();
+                FormMenuPrincipal principal = new FormMenuPrincipal();
+                principal.Show();
+            }
+            else
+            {
+                this.Hide();
+                FormMenuPrincipalAdministrador principal = new FormMenuPrincipalAdministrador();
+                principal.Show();
+            }
+            
             
         }
 

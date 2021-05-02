@@ -35,10 +35,10 @@ namespace MintMarket
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textPass = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
@@ -115,22 +115,23 @@ namespace MintMarket
             this.label.TabIndex = 9;
             this.label.Text = "Usuario:";
             // 
-            // txtnombre
+            // txtUser
             // 
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtnombre.Location = new System.Drawing.Point(109, 19);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(185, 23);
-            this.txtnombre.TabIndex = 8;
+            this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUser.Location = new System.Drawing.Point(109, 19);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(185, 23);
+            this.txtUser.TabIndex = 8;
+            this.txtUser.Text = "admin";
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.textPass);
             this.panel1.Controls.Add(this.label);
-            this.panel1.Controls.Add(this.txtnombre);
+            this.panel1.Controls.Add(this.txtUser);
             this.panel1.Location = new System.Drawing.Point(24, 236);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(314, 98);
@@ -148,14 +149,15 @@ namespace MintMarket
             this.label1.TabIndex = 11;
             this.label1.Text = "Contraseña:";
             // 
-            // textBox1
+            // textPass
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(109, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 23);
-            this.textBox1.TabIndex = 10;
+            this.textPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textPass.Location = new System.Drawing.Point(109, 52);
+            this.textPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textPass.Name = "textPass";
+            this.textPass.Size = new System.Drawing.Size(185, 23);
+            this.textPass.TabIndex = 10;
+            this.textPass.Text = "****";
             // 
             // pictureBox1
             // 
@@ -213,10 +215,10 @@ namespace MintMarket
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label;
-        public System.Windows.Forms.TextBox txtnombre;
+        public System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textPass;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
     }
